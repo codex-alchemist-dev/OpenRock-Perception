@@ -1,7 +1,7 @@
 {
   "name": "@openrock/perception",
   "version": "1.0.0",
-  "description": "Line-of-sight plus decaying threat memory - losing sight of a threat means "investigate the last-known spot," never instant omniscience or instant amnesia.",
+  "description": "Line-of-sight plus decaying threat memory - losing sight of a threat means investigate the last-known spot, never instant omniscience or instant amnesia.",
   "license": "MPL-2.0",
   "private": true,
   "main": "src/register.js"
