@@ -74,6 +74,7 @@ function register() {
     return { api: { hasLineOfSight, createThreatMemory } };
 }
 
-module.exports = register;
-module.exports.hasLineOfSight = hasLineOfSight;
-module.exports.createThreatMemory = createThreatMemory;
+// Object.assign() in ONE statement - see @openrock/pathfinding's header for
+// why (esbuild tree-shaking dropped separate trailing assignments, caught
+// via a real BDS run).
+module.exports = Object.assign(register, { hasLineOfSight, createThreatMemory });
